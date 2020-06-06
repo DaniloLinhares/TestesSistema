@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
 	// Run the scenarios specified by tags
-	tags = {"@dummy"},
+	tags = {"@cadusuario"},
 
 	// Define the features files location
 	features = {"src/test/resources/features"},
@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 	glue = {"stepDefinitions"},
 
 	// Plugins
-	// plugin = {"pretty"},
+	plugin = {"pretty"},
 	// plugin = {"html:target/reports/simple-html-report", "json:target/reports/json-report.json"},
 	// plugin = {"de.monochromata.cucumber.report.PrettyReports:target/reports"},
 
@@ -28,7 +28,7 @@ import org.junit.runner.RunWith;
 	strict = true,
 
 	// Readable format of the console output from Cucumber
-	monochrome = true,
+	//monochrome = true,
 
 	// Code snippets will be created using camelcase
 	snippets = CucumberOptions.SnippetType.CAMELCASE

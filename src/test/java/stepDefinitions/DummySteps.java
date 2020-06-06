@@ -1,43 +1,60 @@
 package stepDefinitions;
 
-import io.cucumber.java.Before;
-import io.cucumber.java.After;
-import org.openqa.selenium.WebDriver;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
-import io.cucumber.java.en.Then;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Quando;
+import io.cucumber.java.pt.Então;
+import net.bytebuddy.implementation.bind.MethodDelegationBinder;
 
 public class DummySteps {
 
-    private WebDriver driver;
+//    @Dado("que estou na pagina de login")
+//    public void PaginaDeLogin() {
+//        System.out.println("StepDefinitions sem argumento");
+//    }
+//
+//    @Dado("não preencho o campo nome")
+//    public void nãoPreenchoOCampoNome() {
+//        System.out.println("StepDefinitions sem argumento");
+//    }
+//
+//    @Quando("preencho E-mail com {string}")
+//    public void preenchoEMail(String email) {
+//        System.out.println(email.substring(0,5));
+//    }
+//
+//    @Quando("preencho senha com {string}")
+//    public void preenchoSenha(String senha) {
+//        System.out.println(senha.substring(0,5));
+//    }
+//
+//    @Quando("preencho idade com {string}")
+//    public void preenchoIdade(String idade) {
+//        System.out.println(idade.substring(0,2));
+//    }
+//
+//    @Quando("pressiono Cadastrar")
+//    public void pressionoCadastrar() {
+//        System.out.println("StepDefinitions sem argumento");
+//    }
+//
+//    @Então("irá exibir uma mensagem informando {string}")
+//    public void mensagem(String mensagem) {
+//        System.out.println(mensagem.substring(0,5));
+//    }
+//
+//    @Dado("não preencho o campo E-mail")
+//    public void nãoPreenchoOCampoEMail() {
+//        System.out.println("StepDefinitions sem argumento");
+//    }
+//
+//    @Quando("preencho Nome com {string}")
+//    public void preenchoNome(String nome) {
+//        System.out.println(nome.substring(0,5));
+//    }
+//
+//    @Então("será exibido a mensagem informando {string}")
+//    public void seráExibidoAMensagemInformando(String msg) {
+//
+//    }
 
-    @Before()
-    public void beforeDummy() {
-        System.out.println("BEFORE");
-    }
-
-    @Before("@chrome")
-    public void beforeChromeDummy() {
-        System.out.println("BEFORE CHROME");
-    }
-
-    @After
-    public void afterDummy() {
-        System.out.println("AFTER");
-    }
-
-    @Given("dummy given")
-    public void dummyGiven() {
-        System.out.println("given");
-    }
-
-    @When("dummy when")
-    public void dummyWhen() {
-        System.out.println("when");
-    }
-
-    @Then("dummy then")
-    public void dummyThen() {
-        System.out.println("then");
-    }
 }
