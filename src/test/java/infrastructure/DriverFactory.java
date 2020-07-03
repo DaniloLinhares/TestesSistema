@@ -3,6 +3,8 @@ package infrastructure;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class DriverFactory {
 
     protected static WebDriver driver;
@@ -13,6 +15,8 @@ public class DriverFactory {
         } else {
             System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
             driver = new ChromeDriver();
+            driver.manage().window().maximize();
+
             return driver;
         }
     }
@@ -20,6 +24,7 @@ public class DriverFactory {
     public static void quitDriver(){
         if (driver != null) {
             driver.quit();
+            driver = null;
         }
     }
 }

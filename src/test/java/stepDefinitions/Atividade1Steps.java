@@ -5,7 +5,7 @@ import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 
 public class Atividade1Steps {
-
+int varrr = 5;
     @Dado("que estou na pagina de login")
     public void PaginaDeLogin() {
         System.out.println("StepDefinitions sem argumento");
